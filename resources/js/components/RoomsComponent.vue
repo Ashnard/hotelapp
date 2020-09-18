@@ -61,7 +61,7 @@
             </div>
             <div class="card-body p-2">
                 <ul>
-                    <li v-for="room in group">{{ room.name }} (#{{room.room_num}})</li>
+                    <li v-for="room in group">{{ room.name.toUpperCase() }} (#{{room.room_num}})</li>
                 </ul>
             </div>
         </div>
@@ -150,7 +150,7 @@
                     <div class="form-group row mb-1">
                         <p class="col-md-4 col-form-label text-md-right">Rooms</p>
                         <ul>
-                            <li v-for="room in group">{{ room.name }} (#{{room.room_num}})</li>
+                            <li v-for="room in group">{{ room.name.toUpperCase() }} (#{{room.room_num}})</li>
                         </ul>
                     </div>
                     <div class="form-group row mb-1 ">

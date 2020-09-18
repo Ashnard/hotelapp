@@ -38003,7 +38003,10 @@ var render = function() {
                   _vm._l(group, function(room) {
                     return _c("li", [
                       _vm._v(
-                        _vm._s(room.name) + " (#" + _vm._s(room.room_num) + ")"
+                        _vm._s(room.name.toUpperCase()) +
+                          " (#" +
+                          _vm._s(room.room_num) +
+                          ")"
                       )
                     ])
                   }),
@@ -38366,7 +38369,7 @@ var render = function() {
                       _vm._l(_vm.group, function(room) {
                         return _c("li", [
                           _vm._v(
-                            _vm._s(room.name) +
+                            _vm._s(room.name.toUpperCase()) +
                               " (#" +
                               _vm._s(room.room_num) +
                               ")"
